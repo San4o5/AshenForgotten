@@ -1,4 +1,0 @@
-repository "Ashen Forgotten/Ashen Forgotten@7972549513242@cloud"
-  path "/"
-    br "/main"
-    co "/main"
