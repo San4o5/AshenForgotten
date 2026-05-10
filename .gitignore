@@ -108,3 +108,10 @@ InitTestScene*.unity*
 .plastic/
 .vscode/
 ignore.conf
+
+# Claude Code context file — local only
+CLAUDE.md
+
+# Local recovery/backup folder
+_Recovery
+_Recovery.meta
