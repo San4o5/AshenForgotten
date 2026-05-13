@@ -4,101 +4,118 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 8f;
-    [SerializeField] private float jumpForce = 16f;
-    [SerializeField] private float dashSpeed = 20f;
-    [SerializeField] private float dashDuration = 0.15f;
-    [SerializeField] private float dashCooldown = 0.5f;
+    [SerializeField] private float _walkSpeed = 4f;
+    [SerializeField] private float _runMultiplier = 1.8f;
+    [SerializeField] private float _jumpForce = 13f;
 
     [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.1f;
-    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private float _groundCheckRadius = 0.1f;
+    [SerializeField] private LayerMask _groundLayer;
 
     [Header("Attack")]
-    [SerializeField] private float attackCooldown = 0.3f;
+    [SerializeField] private float _attackCooldown = 0.3f;
+    [SerializeField] private AttackHitbox _attackHitbox;
 
-    // Component references
     private Rigidbody2D _rb;
-    private SpriteRenderer _spriteRenderer;
+    private Animator _animator;
 
-    // Movement state
     private float _horizontalInput;
     private bool _isGrounded;
+    private bool _isRunning;
     private bool _facingRight = true;
 
-    // Jump state
     private bool _jumpPressed;
-
-    // Dash state
-    private bool _isDashing;
-    private float _dashTimer;
-    private float _dashCooldownTimer;
-
-    // Attack state
     private float _attackTimer;
-    private Vector2 _attackDirection;
+    private bool _controlEnabled = true;
+    private float _controlLockTimer;
+
+    private static readonly int HashSpeed            = Animator.StringToHash("Speed");
+    private static readonly int HashIsRunning        = Animator.StringToHash("IsRunning");
+    private static readonly int HashIsGrounded       = Animator.StringToHash("IsGrounded");
+    private static readonly int HashVerticalVelocity = Animator.StringToHash("VerticalVelocity");
+    private static readonly int HashAttack           = Animator.StringToHash("Attack");
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (_isDashing) return;
+        if (_controlLockTimer > 0f) _controlLockTimer -= Time.deltaTime;
+        if (!CanAct()) { ClearInput(); UpdateAnimator(); return; }
 
         GatherInput();
         HandleAttack();
+        UpdateAnimator();
     }
 
     private void FixedUpdate()
     {
-        // Check if player is on the ground
         _isGrounded = Physics2D.OverlapCircle(
-            groundCheck.position,
-            groundCheckRadius,
-            groundLayer
+            _groundCheck.position,
+            _groundCheckRadius,
+            _groundLayer
         );
 
-        if (_isDashing)
-        {
-            HandleDash();
-            return;
-        }
+        if (!CanAct()) return;
 
         HandleMovement();
         HandleJump();
     }
 
+    private bool CanAct() => _controlEnabled && _controlLockTimer <= 0f;
+
+    private void ClearInput()
+    {
+        _horizontalInput = 0f;
+        _isRunning = false;
+        _jumpPressed = false;
+    }
+
+    public void SetControlEnabled(bool enabled)
+    {
+        _controlEnabled = enabled;
+        if (!enabled) ClearInput();
+    }
+
+    public void LockControl(float duration)
+    {
+        _controlLockTimer = Mathf.Max(_controlLockTimer, duration);
+    }
+
     private void GatherInput()
     {
-        // Read horizontal input from keyboard (new Input System)
         var keyboard = Keyboard.current;
         if (keyboard == null) return;
 
         _horizontalInput = 0f;
-        if (keyboard.leftArrowKey.isPressed) _horizontalInput = -1f;
-        if (keyboard.rightArrowKey.isPressed) _horizontalInput = 1f;
+        if (keyboard.leftArrowKey.isPressed || keyboard.aKey.isPressed)  _horizontalInput = -1f;
+        if (keyboard.rightArrowKey.isPressed || keyboard.dKey.isPressed) _horizontalInput = 1f;
 
-        // Jump
+        _isRunning = keyboard.leftShiftKey.isPressed && _horizontalInput != 0f;
+
         if (keyboard.spaceKey.wasPressedThisFrame && _isGrounded)
             _jumpPressed = true;
 
-        // Dash
-        if (keyboard.leftShiftKey.wasPressedThisFrame && _dashCooldownTimer <= 0f)
-            StartDash();
+        // Debug: H deals 1 self-damage to test Hurt/Die without enemies
+        if (keyboard.hKey.wasPressedThisFrame)
+        {
+            var health = GetComponent<PlayerHealth>();
+            if (health != null)
+                health.TakeDamageFrom(1, transform.position + Vector3.right * (_facingRight ? 1f : -1f));
+        }
 
-        _dashCooldownTimer -= Time.deltaTime;
         _attackTimer -= Time.deltaTime;
     }
 
     private void HandleMovement()
     {
-        _rb.linearVelocity = new Vector2(_horizontalInput * moveSpeed, _rb.linearVelocity.y);
+        float targetSpeed = _walkSpeed * (_isRunning ? _runMultiplier : 1f);
+        _rb.linearVelocity = new Vector2(_horizontalInput * targetSpeed, _rb.linearVelocity.y);
 
-        // Flip sprite based on direction
         if (_horizontalInput > 0 && !_facingRight) Flip();
         else if (_horizontalInput < 0 && _facingRight) Flip();
     }
@@ -107,34 +124,8 @@ public class PlayerController : MonoBehaviour
     {
         if (_jumpPressed)
         {
-            _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, jumpForce);
+            _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, _jumpForce);
             _jumpPressed = false;
-        }
-    }
-
-    private void StartDash()
-    {
-        _isDashing = true;
-        _dashTimer = dashDuration;
-        _dashCooldownTimer = dashCooldown;
-
-        // Dash in the direction the player is facing
-        float dashDirection = _facingRight ? 1f : -1f;
-        _rb.linearVelocity = new Vector2(dashDirection * dashSpeed, 0f);
-
-        // Disable gravity during dash
-        _rb.gravityScale = 0f;
-    }
-
-    private void HandleDash()
-    {
-        _dashTimer -= Time.deltaTime;
-
-        if (_dashTimer <= 0f)
-        {
-            _isDashing = false;
-            _rb.gravityScale = 3f;
-            _rb.linearVelocity = new Vector2(0f, _rb.linearVelocity.y);
         }
     }
 
@@ -146,30 +137,43 @@ public class PlayerController : MonoBehaviour
         if (!keyboard.xKey.wasPressedThisFrame) return;
         if (_attackTimer > 0f) return;
 
-        _attackTimer = attackCooldown;
+        _attackTimer = _attackCooldown;
+        _animator.SetTrigger(HashAttack);
+    }
 
-        // Determine attack direction based on arrow keys held
-        if (keyboard.upArrowKey.isPressed)
-            _attackDirection = Vector2.up;
-        else if (keyboard.downArrowKey.isPressed && !_isGrounded)
-            _attackDirection = Vector2.down;
-        else
-            _attackDirection = _facingRight ? Vector2.right : Vector2.left;
+    // Called from HER_Attack animation event at active frame
+    public void OnAttackHit()
+    {
+        if (_attackHitbox != null) _attackHitbox.Activate();
+    }
 
-        // TODO: trigger attack hitbox
-        Debug.Log($"Attack: {_attackDirection}");
+    // Called from HER_Attack animation event at end frame
+    public void OnAttackEnd()
+    {
+        if (_attackHitbox != null) _attackHitbox.Deactivate();
+    }
+
+    private void UpdateAnimator()
+    {
+        if (_animator == null) return;
+        _animator.SetFloat(HashSpeed, Mathf.Abs(_horizontalInput));
+        _animator.SetBool(HashIsRunning, _isRunning);
+        _animator.SetBool(HashIsGrounded, _isGrounded);
+        _animator.SetFloat(HashVerticalVelocity, _rb.linearVelocity.y);
     }
 
     private void Flip()
     {
         _facingRight = !_facingRight;
-        _spriteRenderer.flipX = !_spriteRenderer.flipX;
+        var s = transform.localScale;
+        s.x = -s.x;
+        transform.localScale = s;
     }
 
     private void OnDrawGizmosSelected()
     {
-        if (groundCheck == null) return;
+        if (_groundCheck == null) return;
         Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        Gizmos.DrawWireSphere(_groundCheck.position, _groundCheckRadius);
     }
 }
