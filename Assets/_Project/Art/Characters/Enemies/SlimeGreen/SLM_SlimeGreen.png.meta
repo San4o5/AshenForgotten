@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: f0d050e19fff501589d9846c907b5463
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6997651187336561001
+    second: SLM_SlimeGreen_0
+  - first:
+      213: -8538672473392247341
+    second: SLM_SlimeGreen_1
+  - first:
+      213: 8232398244103228668
+    second: SLM_SlimeGreen_2
+  - first:
+      213: -4666827962455268097
+    second: SLM_SlimeGreen_3
+  - first:
+      213: 6174692994456866469
+    second: SLM_SlimeGreen_4
+  - first:
+      213: 1669114042552812137
+    second: SLM_SlimeGreen_5
+  - first:
+      213: -4965103747645193195
+    second: SLM_SlimeGreen_6
+  - first:
+      213: -493678768135666857
+    second: SLM_SlimeGreen_7
+  - first:
+      213: 1082136790731802603
+    second: SLM_SlimeGreen_8
+  - first:
+      213: -3390753783089438758
+    second: SLM_SlimeGreen_9
+  - first:
+      213: -2585338842586270823
+    second: SLM_SlimeGreen_10
+  - first:
+      213: -8715141747898131326
+    second: SLM_SlimeGreen_11
+  - first:
+      213: 3481936628390706284
+    second: SLM_SlimeGreen_12
+  - first:
+      213: -2451948409922093889
+    second: SLM_SlimeGreen_13
+  - first:
+      213: 3190764365598838683
+    second: SLM_SlimeGreen_14
+  - first:
+      213: -5158582140468966966
+    second: SLM_SlimeGreen_15
+  - first:
+      213: 8086004607927816749
+    second: SLM_SlimeGreen_16
+  - first:
+      213: 7958643474840243785
+    second: SLM_SlimeGreen_17
+  - first:
+      213: -2474506024650834195
+    second: SLM_SlimeGreen_18
+  - first:
+      213: 9178050312022599089
+    second: SLM_SlimeGreen_19
+  - first:
+      213: -7779594401754415401
+    second: SLM_SlimeGreen_20
+  - first:
+      213: -5277925900659590165
+    second: SLM_SlimeGreen_21
+  - first:
+      213: 3986326617677939605
+    second: SLM_SlimeGreen_22
+  - first:
+      213: -7428309623763016428
+    second: SLM_SlimeGreen_23
+  - first:
+      213: -5829445205781678628
+    second: SLM_SlimeGreen_24
+  - first:
+      213: -4206669420937152486
+    second: SLM_SlimeGreen_25
+  - first:
+      213: -4785894981975061244
+    second: SLM_SlimeGreen_26
+  - first:
+      213: -8787920853285412982
+    second: SLM_SlimeGreen_27
+  - first:
+      213: -4793894153476790322
+    second: SLM_SlimeGreen_28
+  - first:
+      213: 9005897567551627208
+    second: SLM_SlimeGreen_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de74d8a36e7ecd4edb137dd9eb556d96
+      internalID: 6997651187336561001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645c4393156f4da3fa47cae1169ac05c
+      internalID: -8538672473392247341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_2
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a5d8a5d094677c084520ab0c5a5ea1
+      internalID: 8232398244103228668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_3
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a3b8a205020cf5cbfd8c7f02fa430c
+      internalID: -4666827962455268097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_4
+      rect:
+        serializedVersion: 2
+        x: 1504
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fbd13bacbc18de9bcd50c56f53d293
+      internalID: 6174692994456866469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_5
+      rect:
+        serializedVersion: 2
+        x: 1880
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2a4976e5ae8a486ac0836f2951ae6a
+      internalID: 1669114042552812137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_6
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8cba469242297a1855df199e48d476
+      internalID: -4965103747645193195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_7
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc6b9d5608be1b69bbb6301adf175b1
+      internalID: -493678768135666857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_8
+      rect:
+        serializedVersion: 2
+        x: 3008
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac0d2d97894d6300a3d126a1b1ab250
+      internalID: 1082136790731802603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_9
+      rect:
+        serializedVersion: 2
+        x: 3384
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d58690f03bced998b1bcc13918b2b96
+      internalID: -3390753783089438758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_10
+      rect:
+        serializedVersion: 2
+        x: 3760
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed82e4d2c01e6a24199d3b61e29dd3ae
+      internalID: -2585338842586270823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_11
+      rect:
+        serializedVersion: 2
+        x: 4136
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f641966bf2d22b3c99b154b467f45bf4
+      internalID: -8715141747898131326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_12
+      rect:
+        serializedVersion: 2
+        x: 4512
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380e181b9c87803e2ae22f0857f09d56
+      internalID: 3481936628390706284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_13
+      rect:
+        serializedVersion: 2
+        x: 4888
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be72ebd03b9c8b7d9f281a6c072717c
+      internalID: -2451948409922093889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_14
+      rect:
+        serializedVersion: 2
+        x: 5264
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ef8cf0f51b28015901d4bb73f6c15c
+      internalID: 3190764365598838683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_15
+      rect:
+        serializedVersion: 2
+        x: 5640
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8dd86d843d85688599eb7b5a10583d7
+      internalID: -5158582140468966966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_16
+      rect:
+        serializedVersion: 2
+        x: 6016
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e7776b0494fd21f8d3c6698971b692
+      internalID: 8086004607927816749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_17
+      rect:
+        serializedVersion: 2
+        x: 6392
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e755e4217f889cc8a15deb3a565b4a4
+      internalID: 7958643474840243785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_18
+      rect:
+        serializedVersion: 2
+        x: 6768
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0827f14457e94fc4290e3cd16fc9a2d0
+      internalID: -2474506024650834195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_19
+      rect:
+        serializedVersion: 2
+        x: 7144
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a46e12b1a341fa5d9ff43851c510a10
+      internalID: 9178050312022599089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_20
+      rect:
+        serializedVersion: 2
+        x: 7520
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8324ad049cde6e09f9425df69fa3ade6
+      internalID: -7779594401754415401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_21
+      rect:
+        serializedVersion: 2
+        x: 7896
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e738cf46c4cab5298699d9aa48b222
+      internalID: -5277925900659590165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_22
+      rect:
+        serializedVersion: 2
+        x: 8272
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c94bb5c672fd4cf59cc2caa33302b4d
+      internalID: 3986326617677939605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_23
+      rect:
+        serializedVersion: 2
+        x: 8648
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6de85bc23865185185ab04e86984e0a
+      internalID: -7428309623763016428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_24
+      rect:
+        serializedVersion: 2
+        x: 9024
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b2bdcadc29c7f5e8514e6e3bf6fc26
+      internalID: -5829445205781678628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_25
+      rect:
+        serializedVersion: 2
+        x: 9400
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf2d371d6d3c6cab8700ea635f4b437
+      internalID: -4206669420937152486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_26
+      rect:
+        serializedVersion: 2
+        x: 9776
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046c5fd86c50fb045888f0a200b67130
+      internalID: -4785894981975061244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_27
+      rect:
+        serializedVersion: 2
+        x: 10152
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea63f0290acad897b035cec4cd02367
+      internalID: -8787920853285412982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_28
+      rect:
+        serializedVersion: 2
+        x: 10528
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caded2dc28cf9e380822844606f52f28
+      internalID: -4793894153476790322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeGreen_29
+      rect:
+        serializedVersion: 2
+        x: 10904
+        y: 0
+        width: 376
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f128010237761dceb800ca9c1cf45b9d
+      internalID: 9005897567551627208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c3ad4e3156b37cf3b8dc50d9634e0345
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SLM_SlimeGreen_0: 6997651187336561001
+      SLM_SlimeGreen_1: -8538672473392247341
+      SLM_SlimeGreen_10: -2585338842586270823
+      SLM_SlimeGreen_11: -8715141747898131326
+      SLM_SlimeGreen_12: 3481936628390706284
+      SLM_SlimeGreen_13: -2451948409922093889
+      SLM_SlimeGreen_14: 3190764365598838683
+      SLM_SlimeGreen_15: -5158582140468966966
+      SLM_SlimeGreen_16: 8086004607927816749
+      SLM_SlimeGreen_17: 7958643474840243785
+      SLM_SlimeGreen_18: -2474506024650834195
+      SLM_SlimeGreen_19: 9178050312022599089
+      SLM_SlimeGreen_2: 8232398244103228668
+      SLM_SlimeGreen_20: -7779594401754415401
+      SLM_SlimeGreen_21: -5277925900659590165
+      SLM_SlimeGreen_22: 3986326617677939605
+      SLM_SlimeGreen_23: -7428309623763016428
+      SLM_SlimeGreen_24: -5829445205781678628
+      SLM_SlimeGreen_25: -4206669420937152486
+      SLM_SlimeGreen_26: -4785894981975061244
+      SLM_SlimeGreen_27: -8787920853285412982
+      SLM_SlimeGreen_28: -4793894153476790322
+      SLM_SlimeGreen_29: 9005897567551627208
+      SLM_SlimeGreen_3: -4666827962455268097
+      SLM_SlimeGreen_4: 6174692994456866469
+      SLM_SlimeGreen_5: 1669114042552812137
+      SLM_SlimeGreen_6: -4965103747645193195
+      SLM_SlimeGreen_7: -493678768135666857
+      SLM_SlimeGreen_8: 1082136790731802603
+      SLM_SlimeGreen_9: -3390753783089438758
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

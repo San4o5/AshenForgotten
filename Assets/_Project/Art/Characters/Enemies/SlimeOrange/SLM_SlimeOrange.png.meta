@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: 0e7baf21d18deefb49449d79f65c8c49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3752741098218420969
+    second: SLM_SlimeOrange_0
+  - first:
+      213: -5964940813966141972
+    second: SLM_SlimeOrange_1
+  - first:
+      213: -5479580525543567951
+    second: SLM_SlimeOrange_2
+  - first:
+      213: -2564800982419640565
+    second: SLM_SlimeOrange_3
+  - first:
+      213: -7992664820141315506
+    second: SLM_SlimeOrange_4
+  - first:
+      213: 6397046750008786563
+    second: SLM_SlimeOrange_5
+  - first:
+      213: -6267197219448427757
+    second: SLM_SlimeOrange_6
+  - first:
+      213: 4989969337410995732
+    second: SLM_SlimeOrange_7
+  - first:
+      213: -1820336750495775082
+    second: SLM_SlimeOrange_8
+  - first:
+      213: -6375639116952936422
+    second: SLM_SlimeOrange_9
+  - first:
+      213: -5996503930973585531
+    second: SLM_SlimeOrange_10
+  - first:
+      213: 8348317416893796951
+    second: SLM_SlimeOrange_11
+  - first:
+      213: -8480031522636225212
+    second: SLM_SlimeOrange_12
+  - first:
+      213: 4772413288022663309
+    second: SLM_SlimeOrange_13
+  - first:
+      213: -3351536184852245616
+    second: SLM_SlimeOrange_14
+  - first:
+      213: 662173671546463023
+    second: SLM_SlimeOrange_15
+  - first:
+      213: 5767364054540644028
+    second: SLM_SlimeOrange_16
+  - first:
+      213: -5845778871223045752
+    second: SLM_SlimeOrange_17
+  - first:
+      213: -3687593476521314900
+    second: SLM_SlimeOrange_18
+  - first:
+      213: 7359988117819507240
+    second: SLM_SlimeOrange_19
+  - first:
+      213: 1367575013418090043
+    second: SLM_SlimeOrange_20
+  - first:
+      213: 1648344588381203960
+    second: SLM_SlimeOrange_21
+  - first:
+      213: -6920174827303154049
+    second: SLM_SlimeOrange_22
+  - first:
+      213: 5805646005947578246
+    second: SLM_SlimeOrange_23
+  - first:
+      213: 8513243276886499966
+    second: SLM_SlimeOrange_24
+  - first:
+      213: -3369515044612090005
+    second: SLM_SlimeOrange_25
+  - first:
+      213: -3452304688944423552
+    second: SLM_SlimeOrange_26
+  - first:
+      213: 4118246253043286458
+    second: SLM_SlimeOrange_27
+  - first:
+      213: 5547397970530242163
+    second: SLM_SlimeOrange_28
+  - first:
+      213: -2332055703894833909
+    second: SLM_SlimeOrange_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 977ff7ae5c6338a83bbf0deb2a0494ab
+      internalID: -3752741098218420969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daca89fa5829e3c329bfa050187e6b5f
+      internalID: -5964940813966141972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_2
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50c12f9583c347549675c502031d074
+      internalID: -5479580525543567951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d880fb6d436a9af938014f1bcf09e4e9
+      internalID: -2564800982419640565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d81b90b9f091d268a6e2b3729151999
+      internalID: -7992664820141315506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_5
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7c4a1f537dc1f1893f97bf4203778e
+      internalID: 6397046750008786563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_6
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43793f30eea566c78460b2f56c9713a
+      internalID: -6267197219448427757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_7
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 150304757f689bcbbbd585dc14403b2d
+      internalID: 4989969337410995732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_8
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4672483b4c9d4f69ee76bf7bc6cb1b
+      internalID: -1820336750495775082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_9
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeee30e05cf45c435940210f4f71992a
+      internalID: -6375639116952936422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_10
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9ccf3be23095dacbc8f0dce540347a
+      internalID: -5996503930973585531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_11
+      rect:
+        serializedVersion: 2
+        x: 5610
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412f5a2fd1fd0879dbbcb562c5a55899
+      internalID: 8348317416893796951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_12
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e2d644d896485d3a25e7d2a6aba9e9
+      internalID: -8480031522636225212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_13
+      rect:
+        serializedVersion: 2
+        x: 6630
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debcba3b41415954f89b5aa9b1907a1d
+      internalID: 4772413288022663309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_14
+      rect:
+        serializedVersion: 2
+        x: 7140
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1644ebc3652c661d4b27ab669604cbf8
+      internalID: -3351536184852245616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_15
+      rect:
+        serializedVersion: 2
+        x: 7650
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b08fe14aae8c76a38160e31ed4d23e7
+      internalID: 662173671546463023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_16
+      rect:
+        serializedVersion: 2
+        x: 8160
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b925e34bb6fea104b1605114e3dc29f
+      internalID: 5767364054540644028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_17
+      rect:
+        serializedVersion: 2
+        x: 8670
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5dee39b22f385eea6784770983468e
+      internalID: -5845778871223045752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_18
+      rect:
+        serializedVersion: 2
+        x: 9180
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298a1cd0ba11927f6a2f6e3c272ff8a0
+      internalID: -3687593476521314900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_19
+      rect:
+        serializedVersion: 2
+        x: 9690
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e4a0a0a22a115bca102914e477bf43
+      internalID: 7359988117819507240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_20
+      rect:
+        serializedVersion: 2
+        x: 10200
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e590ddc6d16f5e45c840da58072530a6
+      internalID: 1367575013418090043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_21
+      rect:
+        serializedVersion: 2
+        x: 10710
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791301ee6576e3599989a5870b5dab80
+      internalID: 1648344588381203960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_22
+      rect:
+        serializedVersion: 2
+        x: 11220
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1c94761de1b210db4dd1dabf384d37
+      internalID: -6920174827303154049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_23
+      rect:
+        serializedVersion: 2
+        x: 11730
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130c9ba51208d33078406c04f7c9ad79
+      internalID: 5805646005947578246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_24
+      rect:
+        serializedVersion: 2
+        x: 12240
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe76f30a2ac52ce59b05bc98d54fcfd
+      internalID: 8513243276886499966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_25
+      rect:
+        serializedVersion: 2
+        x: 12750
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49ce7f651a28cdaa9373199524075c3
+      internalID: -3369515044612090005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_26
+      rect:
+        serializedVersion: 2
+        x: 13260
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7eaaf5a450ae894c93850b45f0d7ffc
+      internalID: -3452304688944423552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_27
+      rect:
+        serializedVersion: 2
+        x: 13770
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e0e0fbc859eb3848ff0c4e11be1c59
+      internalID: 4118246253043286458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_28
+      rect:
+        serializedVersion: 2
+        x: 14280
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650417a516ca41d289e4fcec3bdacc45
+      internalID: 5547397970530242163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SLM_SlimeOrange_29
+      rect:
+        serializedVersion: 2
+        x: 14790
+        y: 0
+        width: 510
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c842f6484c7e09c0087db98b5545b098
+      internalID: -2332055703894833909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 529e17724075427c2ad11c85c4a279a8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SLM_SlimeOrange_0: -3752741098218420969
+      SLM_SlimeOrange_1: -5964940813966141972
+      SLM_SlimeOrange_10: -5996503930973585531
+      SLM_SlimeOrange_11: 8348317416893796951
+      SLM_SlimeOrange_12: -8480031522636225212
+      SLM_SlimeOrange_13: 4772413288022663309
+      SLM_SlimeOrange_14: -3351536184852245616
+      SLM_SlimeOrange_15: 662173671546463023
+      SLM_SlimeOrange_16: 5767364054540644028
+      SLM_SlimeOrange_17: -5845778871223045752
+      SLM_SlimeOrange_18: -3687593476521314900
+      SLM_SlimeOrange_19: 7359988117819507240
+      SLM_SlimeOrange_2: -5479580525543567951
+      SLM_SlimeOrange_20: 1367575013418090043
+      SLM_SlimeOrange_21: 1648344588381203960
+      SLM_SlimeOrange_22: -6920174827303154049
+      SLM_SlimeOrange_23: 5805646005947578246
+      SLM_SlimeOrange_24: 8513243276886499966
+      SLM_SlimeOrange_25: -3369515044612090005
+      SLM_SlimeOrange_26: -3452304688944423552
+      SLM_SlimeOrange_27: 4118246253043286458
+      SLM_SlimeOrange_28: 5547397970530242163
+      SLM_SlimeOrange_29: -2332055703894833909
+      SLM_SlimeOrange_3: -2564800982419640565
+      SLM_SlimeOrange_4: -7992664820141315506
+      SLM_SlimeOrange_5: 6397046750008786563
+      SLM_SlimeOrange_6: -6267197219448427757
+      SLM_SlimeOrange_7: 4989969337410995732
+      SLM_SlimeOrange_8: -1820336750495775082
+      SLM_SlimeOrange_9: -6375639116952936422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

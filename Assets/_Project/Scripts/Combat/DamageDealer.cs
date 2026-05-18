@@ -1,28 +1,56 @@
 using System.Collections.Generic;
+using AshenForgotten.Enemies;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider2D))]
-public class DamageDealer : MonoBehaviour
+namespace AshenForgotten.Combat
 {
-    [SerializeField] private int _damage = 20;
-    [SerializeField] private LayerMask _targetLayers = ~0;
-
-    private readonly HashSet<IDamageable> _hitThisSwing = new HashSet<IDamageable>();
-
-    public void ResetHits()
+    [RequireComponent(typeof(Collider2D))]
+    public class DamageDealer : MonoBehaviour, IAttacker
     {
-        _hitThisSwing.Clear();
-    }
+        [SerializeField] private int _damage = 20;
+        [SerializeField] private LayerMask _targetLayers = ~0;
+        [SerializeField] private float _knockbackForce = 0f;
+        [SerializeField] private float _knockbackUp = 0f;
+        [SerializeField] private Transform _origin;   // used for knockback direction; defaults to self
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if ((_targetLayers.value & (1 << other.gameObject.layer)) == 0) return;
+        private readonly HashSet<IDamageable> _hitThisSwing = new HashSet<IDamageable>();
 
-        var target = other.GetComponentInParent<IDamageable>();
-        if (target == null) return;
-        if (!_hitThisSwing.Add(target)) return;
+        public int Damage => _damage;
+        public Vector2 Position => _origin != null ? (Vector2)_origin.position : (Vector2)transform.position;
+        public float KnockbackForce => _knockbackForce;
+        public float KnockbackUp => _knockbackUp;
+        public GameObject Owner => gameObject;
 
-        target.TakeDamage(_damage);
-        Debug.Log($"[DamageDealer] Hit {other.name} for {_damage} dmg", other);
+        public void ResetHits()
+        {
+            _hitThisSwing.Clear();
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if ((_targetLayers.value & (1 << other.gameObject.layer)) == 0) return;
+
+            // Ignore trigger volumes on the target (hurtboxes, sensors). Damage applies only to solid bodies.
+            if (other.isTrigger) return;
+
+            var target = other.GetComponentInParent<IDamageable>();
+            if (target == null) return;
+            if (target.IsDead) return;
+            if (!_hitThisSwing.Add(target)) return;
+
+            Vector2 targetPos = other.bounds.center;
+            Vector2 dir = (targetPos - Position).sqrMagnitude > 0.0001f
+                ? (targetPos - Position).normalized
+                : Vector2.right;
+
+            var hit = new HitInfo(_damage, Position, dir, _knockbackForce, _knockbackUp, gameObject);
+            target.TakeDamage(hit);
+
+            // Optional: also notify enemy brain about being hit (for aggro)
+            var brainHolder = other.GetComponentInParent<IBrainHitNotifier>();
+            brainHolder?.NotifyBrainOfHit(hit);
+
+            Debug.Log($"[DamageDealer] Hit {other.name} for {_damage}", other);
+        }
     }
 }
