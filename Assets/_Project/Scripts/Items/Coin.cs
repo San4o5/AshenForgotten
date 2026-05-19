@@ -1,4 +1,3 @@
-using System;
 using AshenForgotten.Player;
 using UnityEngine;
 
@@ -9,8 +8,6 @@ namespace AshenForgotten.Items
     {
         [SerializeField] private int _value = 1;
         [SerializeField] private string _playerTag = "Player";
-
-        public event Action OnPickedUp;   // hook for VFX/SFX later
 
         private bool _collected;
 
@@ -27,8 +24,9 @@ namespace AshenForgotten.Items
             _collected = true;
 
             PlayerWallet.AddCoins(_value);
-            OnPickedUp?.Invoke();
+#if UNITY_EDITOR
             Debug.Log($"[Coin] Picked up. Total: {PlayerWallet.Coins}", this);
+#endif
 
             Destroy(gameObject);
         }

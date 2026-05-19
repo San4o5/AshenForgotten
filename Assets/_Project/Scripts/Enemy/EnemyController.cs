@@ -36,7 +36,6 @@ namespace AshenForgotten.Enemies
             {
                 Self = transform,
                 Body = _rb,
-                Animator = _animator,
                 Player = PlayerService.PlayerTransform,
                 EdgeCheck = _edgeCheck,
                 GroundLayer = _groundLayer,
@@ -44,18 +43,6 @@ namespace AshenForgotten.Enemies
             };
             _brain = CreateBrain();
             _brain.Init(_ctx);
-
-            _health.HealthChanged += OnHealthChanged;
-        }
-
-        protected virtual void OnDestroy()
-        {
-            if (_health != null) _health.HealthChanged -= OnHealthChanged;
-        }
-
-        private void OnHealthChanged(int current, int max)
-        {
-            // Hook for HP bars / VFX later
         }
 
         protected virtual void FixedUpdate()
@@ -89,7 +76,7 @@ namespace AshenForgotten.Enemies
             transform.localScale = s;
         }
 
-        public void SetSpeed(float speed)
+        private void SetSpeed(float speed)
         {
             if (_animator != null) _animator.SetFloat(HashSpeed, speed);
         }

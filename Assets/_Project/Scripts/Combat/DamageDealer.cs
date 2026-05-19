@@ -50,7 +50,9 @@ namespace AshenForgotten.Combat
             var brainHolder = other.GetComponentInParent<IBrainHitNotifier>();
             brainHolder?.NotifyBrainOfHit(hit);
 
+#if UNITY_EDITOR
             Debug.Log($"[DamageDealer] Hit {other.name} for {_damage}", other);
+#endif
         }
     }
 }

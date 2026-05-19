@@ -20,13 +20,12 @@ namespace AshenForgotten.Enemies
         public float KnockbackUp => _knockbackUp;
         public GameObject Owner => gameObject;
 
-        private void OnCollisionStay2D(Collision2D collision) => TryDamage(collision.collider);
         private void OnTriggerStay2D(Collider2D other) => TryDamage(other);
 
         private void TryDamage(Collider2D other)
         {
             if (Time.time - _lastHitTime < _hitCooldown) return;
-            if ((_targetLayers.value & (1 << other.gameObject.layer)) == 0 && _targetLayers.value != ~0) return;
+            if ((_targetLayers.value & (1 << other.gameObject.layer)) == 0) return;
 
             // Ignore trigger volumes (e.g. player's AttackHitbox / hurtboxes) — only solid body counts as "touch"
             if (other.isTrigger) return;

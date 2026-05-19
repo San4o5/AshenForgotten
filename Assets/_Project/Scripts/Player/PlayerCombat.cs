@@ -33,7 +33,7 @@ namespace AshenForgotten.Player
             if (_attackTimer > 0f) return;
 
             _attackTimer = _attackCooldown;
-            _animator.SetTrigger(HashAttack);
+            if (_animator != null) _animator.SetTrigger(HashAttack);
         }
 
         // Called from HER_Attack animation event at active frame

@@ -15,17 +15,15 @@ namespace AshenForgotten.Enemies
     {
         public Transform Self;
         public Rigidbody2D Body;
-        public Animator Animator;
         public Transform Player;
         public Transform EdgeCheck;
         public LayerMask GroundLayer;
-        public IEnemyView View; // for Flip + anim updates
+        public IEnemyView View;
     }
 
     public interface IEnemyView
     {
         bool FacingRight { get; }
-        void SetFacing(float dir);     // dir > 0 → right
-        void SetSpeed(float speed);    // pushes "Speed" param into animator
+        void SetFacing(float dir);
     }
 }

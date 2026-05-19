@@ -7,7 +7,7 @@ namespace AshenForgotten.Player
     {
         [Header("Knockback (defaults applied when HitInfo carries none)")]
         [SerializeField] private float _defaultKnockbackForce = 8f;
-        [SerializeField] private float _defaultKnockbackUp = 4f;
+        [SerializeField] private float _defaultKnockbackUp = 5f;
         [SerializeField] private float _knockbackLockTime = 0.2f;
 
         private Animator _animator;
