@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using AshenForgotten.CameraSystem;
 using AshenForgotten.Enemies;
 using UnityEngine;
 
@@ -12,6 +13,11 @@ namespace AshenForgotten.Combat
         [SerializeField] private float _knockbackForce = 0f;
         [SerializeField] private float _knockbackUp = 0f;
         [SerializeField] private Transform _origin;   // used for knockback direction; defaults to self
+
+        [Header("Hit feedback")]
+        [SerializeField] private float _hitstopDuration = 0.05f;
+        [SerializeField] private float _shakeDuration = 0.1f;
+        [SerializeField] private float _shakeAmplitude = 0.15f;
 
         private readonly HashSet<IDamageable> _hitThisSwing = new HashSet<IDamageable>();
 
@@ -49,6 +55,10 @@ namespace AshenForgotten.Combat
             // Optional: also notify enemy brain about being hit (for aggro)
             var brainHolder = other.GetComponentInParent<IBrainHitNotifier>();
             brainHolder?.NotifyBrainOfHit(hit);
+
+            Hitstop.Freeze(_hitstopDuration);
+            if (CameraFollow.Instance != null)
+                CameraFollow.Instance.Shake(_shakeDuration, _shakeAmplitude);
 
 #if UNITY_EDITOR
             Debug.Log($"[DamageDealer] Hit {other.name} for {_damage}", other);

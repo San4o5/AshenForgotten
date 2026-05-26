@@ -4,6 +4,8 @@ namespace AshenForgotten.CameraSystem
 {
     public class CameraFollow : MonoBehaviour
     {
+        public static CameraFollow Instance { get; private set; }
+
         [Header("Target")]
         [SerializeField] private Transform _target;
 
@@ -20,6 +22,21 @@ namespace AshenForgotten.CameraSystem
 
         private Vector3 _desiredPosition;
         private Vector3 _velocity;
+
+        private float _shakeTimeRemaining;
+        private float _shakeDuration;
+        private float _shakeAmplitude;
+
+        private void OnEnable() => Instance = this;
+        private void OnDisable() { if (Instance == this) Instance = null; }
+
+        public void Shake(float duration, float amplitude)
+        {
+            if (duration <= 0f || amplitude <= 0f) return;
+            _shakeDuration = duration;
+            _shakeTimeRemaining = duration;
+            _shakeAmplitude = amplitude;
+        }
 
         private void LateUpdate()
         {
@@ -41,7 +58,18 @@ namespace AshenForgotten.CameraSystem
                 _desiredPosition.y = targetPos.y + halfH;
 
             Vector3 desired = new Vector3(_desiredPosition.x, _desiredPosition.y, transform.position.z);
-            transform.position = Vector3.SmoothDamp(transform.position, desired, ref _velocity, _smoothTime, _maxSpeed);
+            Vector3 smoothed = Vector3.SmoothDamp(transform.position, desired, ref _velocity, _smoothTime, _maxSpeed);
+
+            if (_shakeTimeRemaining > 0f)
+            {
+                _shakeTimeRemaining -= Time.unscaledDeltaTime;
+                float strength = _shakeAmplitude * Mathf.Clamp01(_shakeTimeRemaining / Mathf.Max(_shakeDuration, 0.0001f));
+                Vector2 noise = Random.insideUnitCircle * strength;
+                smoothed.x += noise.x;
+                smoothed.y += noise.y;
+            }
+
+            transform.position = smoothed;
         }
 
         private void OnDrawGizmos()

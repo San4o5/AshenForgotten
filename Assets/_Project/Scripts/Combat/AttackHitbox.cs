@@ -6,8 +6,6 @@ namespace AshenForgotten.Combat
     [RequireComponent(typeof(DamageDealer))]
     public class AttackHitbox : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer _slashVfx;
-
         private Collider2D _collider;
         private DamageDealer _damageDealer;
 
@@ -16,20 +14,17 @@ namespace AshenForgotten.Combat
             _collider = GetComponent<Collider2D>();
             _damageDealer = GetComponent<DamageDealer>();
             _collider.enabled = false;
-            if (_slashVfx != null) _slashVfx.enabled = false;
         }
 
         public void Activate()
         {
             _damageDealer.ResetHits();
             _collider.enabled = true;
-            if (_slashVfx != null) _slashVfx.enabled = true;
         }
 
         public void Deactivate()
         {
             _collider.enabled = false;
-            if (_slashVfx != null) _slashVfx.enabled = false;
         }
 
         private void OnDrawGizmos()

@@ -8,6 +8,7 @@ namespace AshenForgotten.Player
         [Header("Attack")]
         [SerializeField] private float _attackCooldown = 0.3f;
         [SerializeField] private AttackHitbox _attackHitbox;
+        [SerializeField] private Animator _weaponAnimator;
 
         private IPlayerInput _input;
         private Animator _animator;
@@ -15,6 +16,7 @@ namespace AshenForgotten.Player
         private bool _enabled = true;
 
         private static readonly int HashAttack = Animator.StringToHash("Attack");
+        private static readonly int HashSwing = Animator.StringToHash("Swing");
 
         public void SetEnabled(bool enabled) => _enabled = enabled;
 
@@ -34,6 +36,7 @@ namespace AshenForgotten.Player
 
             _attackTimer = _attackCooldown;
             if (_animator != null) _animator.SetTrigger(HashAttack);
+            if (_weaponAnimator != null) _weaponAnimator.SetTrigger(HashSwing);
         }
 
         // Called from HER_Attack animation event at active frame
