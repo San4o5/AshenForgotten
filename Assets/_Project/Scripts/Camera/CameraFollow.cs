@@ -30,6 +30,15 @@ namespace AshenForgotten.CameraSystem
         private void OnEnable() => Instance = this;
         private void OnDisable() { if (Instance == this) Instance = null; }
 
+        private void Start()
+        {
+            if (_target == null) return;
+            // Snap camera onto the target immediately so it is centered from frame one.
+            Vector3 targetPos = _target.position + new Vector3(0f, _offsetY, 0f);
+            _desiredPosition = new Vector3(targetPos.x, targetPos.y, transform.position.z);
+            transform.position = _desiredPosition;
+        }
+
         public void Shake(float duration, float amplitude)
         {
             if (duration <= 0f || amplitude <= 0f) return;

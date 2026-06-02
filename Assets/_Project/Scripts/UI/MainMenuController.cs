@@ -6,7 +6,7 @@ namespace AshenForgotten.UI
 {
     public class MainMenuController : MonoBehaviour
     {
-        [SerializeField] private string _gameSceneName = "SampleScene";
+        [SerializeField] private string _gameSceneName = "Zone01_Level";
         [SerializeField] private Button _playButton;
         [SerializeField] private Button _quitButton;
 

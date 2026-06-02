@@ -91,7 +91,8 @@ namespace AshenForgotten.Enemies
         private void TickHop()
         {
             float dirX = ChooseHopDirection();
-            if (Mathf.Sign(_facingDir) != Mathf.Sign(dirX)) Flip(dirX);
+            // dirX == 0 means "no safe ground either side" — hop straight up in place.
+            if (dirX != 0f && Mathf.Sign(_facingDir) != Mathf.Sign(dirX)) Flip(dirX);
 
             _ctx.Body.linearVelocity = new Vector2(dirX * _hopHorizontalSpeed, _hopVerticalImpulse);
             _state = State.Airborne;
@@ -113,17 +114,46 @@ namespace AshenForgotten.Enemies
 
         private float ChooseHopDirection()
         {
+            float dir;
+
             if (_mode == Mode.Chase && _ctx.Player != null)
             {
                 float d = Mathf.Sign(_ctx.Player.position.x - _ctx.Self.position.x);
-                return d == 0f ? _facingDir : d;
+                dir = d == 0f ? _facingDir : d;
+            }
+            else
+            {
+                // Patrol: reverse at bounds, otherwise keep facing
+                float dxFromOrigin = _ctx.Self.position.x - _origin.x;
+                if (dxFromOrigin > _patrolRange) dir = -1f;
+                else if (dxFromOrigin < -_patrolRange) dir = 1f;
+                else dir = _facingDir;
             }
 
-            // Patrol: reverse at bounds, otherwise keep facing
-            float dxFromOrigin = _ctx.Self.position.x - _origin.x;
-            if (dxFromOrigin >  _patrolRange) return -1f;
-            if (dxFromOrigin < -_patrolRange) return  1f;
-            return _facingDir;
+            // Edge guard: never hop off a ledge into a pit. If there's no ground
+            // ahead in the chosen direction, turn around instead (applies to both
+            // patrol and chase so slimes won't suicide into gaps).
+            if (!HasGroundAhead(dir))
+            {
+                dir = -dir;
+                // If there's no ground the other way either, stay put this hop.
+                if (!HasGroundAhead(dir)) return 0f;
+            }
+
+            return dir;
+        }
+
+        private bool HasGroundAhead(float dir)
+        {
+            // Probe ahead at roughly the slime's hop landing distance and cast down
+            // to detect a ledge/pit. Scaled by hop speed so faster slimes look further.
+            float aheadDistance = Mathf.Max(1.5f, _hopHorizontalSpeed * 0.7f);
+            const float probeDepth = 1.5f;
+            Vector2 origin = (Vector2)_ctx.Self.position
+                             + Vector2.right * (dir * aheadDistance)
+                             + Vector2.down * _groundCheckOffsetY;
+            var hit = Physics2D.Raycast(origin, Vector2.down, probeDepth, _ctx.GroundLayer);
+            return hit.collider != null;
         }
 
         private bool IsGrounded()

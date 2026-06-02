@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf1720b064c0139d298e98bf95f05c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AshenForgotten.UI.MainMenuController
-  _gameSceneName: SampleScene
+  _gameSceneName: Zone01_Level
   _playButton: {fileID: 246284751}
   _quitButton: {fileID: 2065960936}
 --- !u!114 &1812033391
