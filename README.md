@@ -109,17 +109,6 @@ Full write-up with reasoning behind every decision: [ARCHITECTURE.md](ARCHITECTU
 
 ---
 
-## 🚧 Status
-
-The game is in active development. Planned next:
-<!-- TODO: adjust the roadmap to your actual plans -->
-- [ ] More enemy types
-- [ ] Boss fight
-- [ ] Save system for level progress
-- [ ] Sound design & music
-
----
-
 ## 👤 Author
 
 **Oleksandr Babaryka** — [github.com/San4o5](https://github.com/San4o5)
